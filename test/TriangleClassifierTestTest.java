@@ -12,7 +12,7 @@ class TriangleClassifierTestTest {
         int side2=2;
         int side3=2;
         String expected="equilateral triangle";
-        String result= TriangleClassifierTest.triangleclassifier(2,2,2);
+        String result= TriangleClassifierTest.triangleclassifier(side1,side2,side3);
         assertEquals(result,expected);
     }
     @Test
@@ -22,7 +22,7 @@ class TriangleClassifierTestTest {
         int side2=2;
         int side3=3;
         String expected="isosceles triangle";
-        String result= TriangleClassifierTest.triangleclassifier(2,2,3);
+        String result= TriangleClassifierTest.triangleclassifier(side1,side2,side3);
         assertEquals(result,expected);
     }
     @Test
@@ -32,7 +32,7 @@ class TriangleClassifierTestTest {
         int side2=4;
         int side3=5;
         String expected="normal triangle";
-        String result= TriangleClassifierTest.triangleclassifier(3,4,5);
+        String result= TriangleClassifierTest.triangleclassifier(side1,side2,side3);
         assertEquals(result,expected);
     }
     @Test
@@ -42,7 +42,7 @@ class TriangleClassifierTestTest {
         int side2=2;
         int side3=3;
         String expected="is not triangle";
-        String result= TriangleClassifierTest.triangleclassifier(8,2,3);
+        String result= TriangleClassifierTest.triangleclassifier(side1,side2,side3);
         assertEquals(result,expected);
     }
     @Test
@@ -52,7 +52,7 @@ class TriangleClassifierTestTest {
         int side2=2;
         int side3=1;
         String expected="is not triangle";
-        String result= TriangleClassifierTest.triangleclassifier(-1,2,1);
+        String result= TriangleClassifierTest.triangleclassifier(side1,side2,side3);
         assertEquals(result,expected);
     }
     @Test
@@ -62,7 +62,7 @@ class TriangleClassifierTestTest {
         int side2=1;
         int side3=1;
         String expected="is not triangle";
-        String result= TriangleClassifierTest.triangleclassifier(0,1,1);
+        String result= TriangleClassifierTest.triangleclassifier(side1,side2,side3);
         assertEquals(result,expected);
     }
 }
